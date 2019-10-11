@@ -1,0 +1,8 @@
+{% load static %}
+
+{% for swatch in q %}
+	{{ 'bpaint_app/images/'|add:swatch }}
+	{% with 'bpaint_app/images/'|add:swatch as swatch_image %}
+		<img src="{% static swatch_image %}" alt="color swatch">
+	{% endwith %}
+{% endfor %}

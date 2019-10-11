@@ -1,0 +1,11 @@
+*env/
+
+*.pyc
+*.pyo
+
+__pycache__/
+
+django-master/
+django-master.zip
+
+dj-m*.txt
